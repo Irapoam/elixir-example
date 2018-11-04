@@ -28,8 +28,8 @@ Ready to run in production? Please [check our deployment guides](http://www.phoe
 ```javascript
 {
   allUsers {
-  	id
-  	name
+    id
+    name
     function
   }
 }
@@ -72,8 +72,8 @@ mutation {
 ```javascript
 {
   allLinks {
-  	id
-  	url
+    id
+    url
     description
   }
 }
