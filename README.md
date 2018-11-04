@@ -17,3 +17,99 @@ Ready to run in production? Please [check our deployment guides](http://www.phoe
   * Docs: https://hexdocs.pm/phoenix
   * Mailing list: http://groups.google.com/group/phoenix-talk
   * Source: https://github.com/phoenixframework/phoenix
+
+#### Based on: 
+*  https://www.howtographql.com/graphql-elixir/0-introduction/
+
+
+## Usage:
+
+### GET Users
+```javascript
+{
+  allUsers {
+  	id
+  	name
+    function
+	}
+}
+```
+### SAVE User
+```javascript
+mutation {
+  createUser(
+    name: "Name",
+    function: "Function",
+  ) {
+    id
+    name
+    function
+  }
+}
+```
+### BODY
+
+```javascript
+{
+  "data": {
+    "allUsers": [
+      {
+        "name": "Name 1",
+        "id": "1",
+        "function": "Developer"
+      },
+      {
+        "name": "Name 2",
+        "id": "2",
+        "function": "Developer"
+      },
+    ]
+  }
+}
+```
+
+### GET Links
+```javascript
+{
+  allLinks {
+  	id
+  	url
+    description
+  }
+}
+```
+
+### BODY
+
+```javascript
+{
+  "data": {
+    "allLinks": [
+      {
+        "url": "http://graphql.org/",
+        "id": "1",
+        "description": "The Best Query Language"
+      },
+      {
+        "url": "http://dev.apollodata.com/",
+        "id": "2",
+        "description": "Awesome GraphQL Client"
+      }
+    ]
+  }
+}
+```
+
+### SAVE Link
+```javascript
+mutation {
+  createLink(
+    url: "http://npmjs.com/package/graphql-tools",
+    description: "Best Tools!",
+  ) {
+    id
+    url
+    description
+  }
+}
+```
