@@ -11,8 +11,15 @@
 # and so on) as they will fail if something goes wrong.
 
 alias Community.News.Link
+alias Community.Users.User
 alias Community.Repo
 
 %Link{url: "http://graphql.org/", description: "The Best Query Language"} |> Repo.insert!
 %Link{url: "http://dev.apollodata.com/", description: "Awesome GraphQL Client"} |> Repo.insert!
+
+%User{name: "Irapoam", function: "Developer"} |> Repo.insert!
+%User{name: "Thiago", function: "Developer"} |> Repo.insert!
+
+
+
 
