@@ -31,7 +31,7 @@ Ready to run in production? Please [check our deployment guides](http://www.phoe
   	id
   	name
     function
-	}
+  }
 }
 ```
 ### SAVE User
